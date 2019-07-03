@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vitónica</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="img/apple-icon.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Nunito:300,300i,700" rel="stylesheet">
+    
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="css/modal.css" rel="stylesheet" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(main);
+
+        var contador = 1;
+
+        function main() {
+            $('.menu_bar').click(function () {
+                // $('nav').toggle(); 
+
+                if (contador == 1) {
+                    $('nav').animate({
+                        left: '0'
+                    });
+                    contador = 0;
+                } else {
+                    contador = 1;
+                    $('nav').animate({
+                        left: '-100%'
+                    });
+                }
+
+            });
+
+        };
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <div id="contenedor">
+        <div>
+            <header>
+                <div id="identificador">
+                    <img src="img/1x/logo.png" alt="logo" class="logo">
+                </div>
+                <img src="img/1x/vit.png">
+                <nav>
+                    <ul>
+                        <li><a href="#"><img src="img/1x/manzana.png" alt="icono-manzana"
+                                    class="icono-manzana">Dietas</a></li>
+                        <li><a href="#"><img src="img/1x/corazon.png" alt="icono-corazon"
+                                    class="icono-corazon">Lesiones</a></li>
+                        <li><a href="#"><img src="img/1x/pesa.png" alt="icono-pesas"
+                                    class="icono-pesas">Entrenamiento</a></li>
+                        <li><a href="#"><img src="img/1x/contacto.png" alt="icono-contacto"
+                                    class="icono-contacto">Contacto</a></li>
+                    </ul>
+
+                </nav>
+                <div class="menu_bar">
+                    <a href="#">
+                        <img src="img/1x/menu.png" alt="ícono  menú" class="menu">
+                    </a>
+                </div>
+            </header>
+            <div class="imagenhero">
+                <div class="imghero"></div>
+            </div>
+        </div>
+
+        <section class="seccion1">
+            <div class="txtcentrado">
+                <h2>Dietas</h2>
+            </div>
+            <div class="servicios">
+                <div class="contenido">
+                    <hr>
+
+                    <!-- MODAL 1-->
+                    <div class="modal myModal">
+                    
+                        <!-- Contenido del MODAL 1-->
+                        <div class="modal-content 1">
+                            <span class="close">&times;</span>
+                            <p>Ensalada de quinoa</p>
+                            <div class="contenido1">
+                                <div>
+									<img src="img/ing1.png" alt="ingredientes1">
+								</div>
+                                <div>
+									<img src="img/prep1.png" alt="preparacion1">
+								</div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="img/diet1.jpg" class="imgblog" alt="diet1">
+                    <h3><a href="#" class="openmodal myBtn">Ensalada de quinoa </a></h3>
+                    <p>Queso como fuente de proteínas, mucha fibra e hidratos complejos así como vitamina C, carotenos y
+                        vitamina A esta receta resulta ideal para el verano.</p>
+                </div>
+
+                <div class="contenido">
+                    <hr>
+					
+					<!-- MODAL 1-->
+                    <div class="modal myModal 2">
+                    
+                        <!-- Contenido del MODAL 1-->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Ensalada de quinoa</p>
+                            <div class="contenido1">
+                                <div>
+									<img src="img/ing2.png" alt="ingredientes2">
+								</div>
+                                <div>
+									<img src="img/prep2.png" alt="preparacion2">
+								</div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+					
+                    <img src="img/diet2.jpg" class="imgblog" alt="diet2">
+                    <h3><a href="#">Habas frescas</a></h3>
+                    <p>Este salteado rápido rico en fibra y proteínas vegetales puede acompañar perfectamente una
+                        hamburguesa sin carne o un plato a base de huevo.</p>
+                </div>
+
+                <div class="contenido">
+                    <hr>
+					
+					<!-- MODAL 1-->
+                    <div class="modal myModal">
+                    
+                        <!-- Contenido del MODAL 1-->
+                        <div class="modal-content 3">
+                            <span class="close">&times;</span>
+                            <p>Ensalada de quinoa</p>
+                            <div class="contenido1">
+                                <div>
+									<img src="img/ing3.png" alt="ingredientes3">
+								</div>
+                                <div>
+									<img src="img/prep3.png" alt="preparacion3">
+								</div>
+                                
+                            </div>
+                        </div>
+                    </div>
+					
+                    <img src="img/diet3.jpg" class="imgblog" alt="diet3">
+                    <h3><a href="#">Ensalada marinera </a></h3>
+                    <p>Con pescado fuente de hierro y proteínas esta ensalada es una buena alternativa para la comida
+                        por su alta capacidad para saciar al organismo.</p>
+                </div>
+
+
+                <div class="contenido">
+                    <hr>
+					
+					<!-- MODAL 1-->
+                    <div class="modal myModal">
+                    
+                        <!-- Contenido del MODAL 1-->
+                        <div class="modal-content 4">
+                            <span class="close">&times;</span>
+                            <p>Ensalada de quinoa</p>
+                            <div class="contenido1">
+                                <div>
+									<img src="img/ing4.png" alt="ingredientes4">
+								</div>
+                                <div>
+									<img src="img/prep4.png" alt="preparacion4">
+								</div>
+                                
+                            </div>
+                        </div>
+                    </div>
+					
+                    <img src="img/diet4.jpg" class="imgblog" alt="diet4">
+                    <h3><a href="#">Vasitos de mango</a></h3>
+                    <p>Para el desayuno o bien, como snack o postre muy sano, podemos crear estos vasitos fáciles que
+                        aprovechan todas las propiedades de las semillas de chía.</p>
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <section class="seccion2">
+            <div class="izq">
+                <div class="espacio">
+                    <img src="img/lesiones.jpg" alt="lesiones">
+                </div>
+            </div>
+
+            <div class="der">
+                <div class="espacio">
+                    <h2>Lesiones</h2>
+                    <p>La práctica de cualquier deporte llevada al alto rendimiento es susceptible de causar lesiones.
+                        El CrossFit no es el único ni es ninguna excepción. </p>
+                </div>
+
+                <div class="espacio">
+					
+					<!-- MODAL 1-->
+                    <div class="modal myModal">
+                    
+                        <!-- Contenido del MODAL 1-->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Lesiones más frecuentes</p>
+                            <div class="contenido1">
+                                <div>
+								  <img src="img/les1.png" alt="lesiones1">
+								</div>
+                                <div>
+			                      <img src="img/les2.png" alt="lesiones2">
+								</div>
+                                <div>
+								  <img src="img/les3.png" alt="lesiones3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <a href="#" title="Lee más acerca de esto" class="boton">Lesiones más frecuentes</a>
+					
+                </div>
+
+            </div>
+
+
+        </section>
+        <section class="seccion3">
+            <div class="columnaizq">
+                <div>
+                    <h2 class="txtseccion3">Entrenamiento</h2>
+                </div>
+
+                <div class="articulosizq">
+                    <article class="artblog">
+                        <img src="img/1x/1x/1x/ent1.png" class="imgblog">
+
+                    </article>
+
+                    <article class="artblog">
+                        <img src="img/1x/1x/1x/ent2.png" class="imgblog">
+                    </article>
+
+                    <article class="artblog">
+                        <img src="img/1x/1x/1x/ent3.png" class="imgblog">
+                    </article>
+                </div>
+                <div class="articulosizq">
+
+                    <article class="artblog">
+                        <img src="img/1x/1x/1x/ent4.png" class="imgblog">
+                    </article>
+
+                    <article class="artblog">
+                        <img src="img/1x/1x/1x/ent5.png" class="imgblog">
+                    </article>
+
+                    <article class="artblog">
+                        <img src="img/1x/1x/1x/ent6.png" class="imgblog">
+                    </article>
+                </div>
+
+            </div>
+
+            <div class="columnaderecha">
+
+                <div>
+                    <h2 class="txtseccion3">¡Tenemos nuevo reto semanal!</h2>
+                </div>
+                <blockquote>
+                    <p class="cita"> Esta semana traemos un súper reto semanal para movernos más en nuestro día a día y
+                        que sumemos más actividad física diaria: ¿puedes llegar a los 100.000 pasos en una semana?
+                    </p>
+                    <p class="autor"><strong>¿te apuntas?</strong><br><i>Comparte tus resultados </i><br>»</p>
+
+                </blockquote>
+            </div>
+
+        </section>
+        <footer>
+            <div>
+                <p>&copy Vitónica</p>
+            </div>
+            <div id="linksfooter">
+                <a href="#">RECIBE UN EMAIL AL DÍA CON LOS ARTÍCULOS DE VITÓNICA:</a>
+				<a href="#">Correo electrónico</a>
+				<hr>
+                <a href="#"><div class="espacio"><a href="#" title="Lee más acerca de esto" class="boton">Suscribir</a>
+                  </div>
+				</a>
+                
+            </div>
+            <div id="divredes">
+                <a href="https://www.facebook.com/Vitonica"><img src="img/facebook.svg" alt="logo facebook" /></a>
+                <a href="https://www.youtube.com/channel/UC1_Yz7Tl8_m6IHxszrA0WSg?sub_confirmation=1"><img
+                        src="img/1x/youtube.png" alt="logo youtube" /></a>
+                <a href="https://www.instagram.com/vitonica_com/"><img src="img/instagram-logo.svg"
+                        alt="logo instagram" /></a>
+            </div>
+
+        </footer>
+    </div>
+
+    <script>
+        // Get the modals
+        var modals = document.getElementsByClassName('modal');
+        // Get the button that opens the modal
+        var btns = document.getElementsByClassName("openmodal");
+        var spans = document.getElementsByClassName("close");
+
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].onclick = function () {
+                modals[i].style.display = "block";
+            }
+        }
+        for (let i = 0; i < spans.length; i++) {
+            spans[i].onclick = function () {
+                modals[i].style.display = "none";
+            }
+        }
+        //for(let i=0;i<spans.length;i++){
+        //    window.onclick = function(event) {
+        //        if (event.target == modals[i]) {
+        //        modals[i].style.display = "none";
+        //    }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            for (let i = 0; i < spans.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
